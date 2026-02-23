@@ -1,0 +1,49 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: #c94b4b;
+  color: #fff;
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popover {
+  position: absolute;
+  width: 260px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  z-index: 9999;
+}
+
+.popover__title {
+  font-weight: 600;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.popover__content {
+  padding: 10px 12px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.popover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  border-width: 8px 8px 0 8px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  filter: drop-shadow(0 -1px 0 #dcdcdc);
+}
